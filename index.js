@@ -108,10 +108,8 @@ flatten: function(collection, shallow, newArr=[]){
       }
     }
   }
+
 }
-
-
-  }
-})()
+  })()
 
 fi.libraryMethod()

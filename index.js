@@ -82,7 +82,6 @@ last: function(collection, start = false){
   return (start) ? collection.slice(collection.length-start, collection.length) :
   collection[collection.length-1]
 },
-<<<<<<< HEAD
 
 //has() returns a boolean indicicating whether an element with the specified key
 //exits or not
@@ -97,8 +96,7 @@ sortBy: function(collection, callback) {
     return callback(a) - callback(b)
   })
 },
-=======
->>>>>>> 3eeb17c4113165c409af7bd68df4ec4cca7892b6
+
 
   }
 })()

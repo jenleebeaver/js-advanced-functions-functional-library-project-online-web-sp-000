@@ -97,6 +97,10 @@ sortBy: function(collection, callback) {
   })
 },
 
+flatten: function(collection, shallow, newArr=[]){
+  
+}
+
 
   }
 })()

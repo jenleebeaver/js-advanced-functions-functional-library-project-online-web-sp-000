@@ -97,7 +97,7 @@ sortBy: function(collection, callback) {
   })
 },
 
-unpack: function(reciever, arr){
+unpack: function(receiver, arr){
   for (let val of arr)
     receiver.push(val)
 },

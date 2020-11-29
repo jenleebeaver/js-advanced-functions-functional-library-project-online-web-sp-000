@@ -100,7 +100,13 @@ sortBy: function(collection, callback) {
 flatten: function(collection, shallow, newArr=[]){
   if (!Array.isArray(collection)) return newArr.push(collection)
   if (shallow){
-    
+    for (let val of collection)
+      Array.isArray(val) ? this.unpack(newArr, val) : newArr.push(val)
+    } else {
+      for (let val of collection) {
+        this.flatten(val, false, newArr)
+      }
+    }
   }
 }
 
